@@ -1,4 +1,5 @@
 window.addEventListener("load",function() {
+  
   document.querySelector(".preloader").classList.add("opacity-0");
   setTimeout(()=>{
     document.querySelector(".preloader").style.display="none";
@@ -10,7 +11,7 @@ const filterContainer=document.querySelector(".portfolio-filter"),
       totalFilterBtn=filterBtns.length,
       portfolioItems=document.querySelectorAll(".portfolio-item"),
       totalPortfolioItem=portfolioItems.length;
-
+  
       for (let i = 0; i < totalFilterBtn; i++) {
         filterBtns[i].addEventListener("click",function(){
           filterContainer.querySelector(".active").classList.remove("active");
@@ -91,7 +92,6 @@ const nav=document.querySelector(".nav"),
       totalNavList=navList.length,
       allSection=document.querySelectorAll(".section"),
       totalSection=allSection.length;
-
 for (var i = 0; i < totalNavList; i++) {
   const a=navList[i].querySelector("a");
 
